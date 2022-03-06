@@ -12,6 +12,7 @@ class HomeController extends Controller
    public function index() {
 
     $data = Movie::all();
+    // dd($data);
         return view('home', compact('data'));
     }
 }
